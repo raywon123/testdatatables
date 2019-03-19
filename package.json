@@ -1,0 +1,24 @@
+{
+  "name": "testdatatables",
+  "version": "1.0.0",
+  "description": "https://datatables.net/examples/data_sources/ajax.html",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raywon123/testdatatables.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raywon123/testdatatables/issues"
+  },
+  "homepage": "https://github.com/raywon123/testdatatables#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
