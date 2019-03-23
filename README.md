@@ -54,3 +54,27 @@ https://datatables.net/examples/data_sources/js_array
 https://editor.datatables.net/examples/simple/server-side-processing.html
 
 https://medium.com/@indiaaeevans/server-side-rendering-with-jquery-datatables-62c585288cc4
+
+render image
+https://datatables.net/reference/option/columns.render
+
+https://www.datatables.net/examples/advanced_init/column_render.html
+
+"columnDefs": [
+            {
+                // The `data` parameter refers to the data for the cell (defined by the
+                // `data` option, which defaults to the column being worked with, in
+                // this case `data: 0`.
+                "render": function ( data, type, row ) {
+                    return data +' ('+ row[3]+')';
+                },
+                "targets": 0
+            },
+            { "visible": false,  "targets": [ 3 ] }
+        ]
+
+Bruno Nash (38)
+
+index.html
+example.html
+example2.html
