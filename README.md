@@ -78,3 +78,9 @@ Bruno Nash (38)
 index.html
 example.html
 example2.html
+
+icon image
+https://icons8.com/icon/27/checkmark
+https://www.rapidtables.com/web/html/html-codes/htm-code-check.html
+
+http://blog.creative-tim.com/web-design/free-dashboard-templates/
