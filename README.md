@@ -84,3 +84,17 @@ https://icons8.com/icon/27/checkmark
 https://www.rapidtables.com/web/html/html-codes/htm-code-check.html
 
 http://blog.creative-tim.com/web-design/free-dashboard-templates/
+
+--------------------
+
+order by column:
+
+    $('#example').DataTable( {
+        "order": [[ 3, "desc" ]]
+
+index:
+var table = $('#example').DataTable();
+ 
+$('#example tbody').on( 'click', 'tr', function () {
+    alert( 'Row index: '+table.row( this ).index() );
+} );
