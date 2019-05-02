@@ -1,0 +1,30 @@
+https://docs.microsoft.com/en-us/sql/ssms/scripting/sqlcmd-use-the-utility?view=sql-server-2017
+
+Connecting to a named instance by using Windows Authentication to interactively run Transact-SQL statements:
+
+sqlcmd -S <ComputerName>\<InstanceName>  
+
+Connecting to a named instance by using Windows Authentication and specifying input and output files:
+
+sqlcmd -S <ComputerName>\<InstanceName> -i <MyScript.sql> -o <MyOutput.rpt
+qlcmd -Q "SELECT * FROM AdventureWorks2012.Person.Person" -o MyOutput.txt 
+
+Connecting to a named instance using SQL Server Authentication to interactively run Transact-SQL statements, with sqlcmd prompting for a password:
+
+sqlcmd -U MyLogin -S <ComputerName>\<InstanceName>  
+
+o see a list of the options that are supported by the sqlcmd utility run: sqlcmd -?.
+
+----------
+
+https://stackoverflow.com/questions/39336171/executing-sql-query-on-multiple-databases
+
+USE DB1;
+:r C:\SqlScript\YourLargeScript.sql
+GO
+USE DB2;
+:r C:\SqlScript\YourLargeScript.sql
+GO
+USE DB3;
+:r C:\SqlScript\YourLargeScript.sql
+GO
